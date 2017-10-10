@@ -1,8 +1,8 @@
 package controller;
 
 import com.google.gson.Gson;
-import entity.HomeObj;
-import org.springframework.web.bind.annotation.RequestMapping;
+import entity.Home;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @project SpringRestStarter
  */
 @RestController
-public class Home {
-    @RequestMapping("/")
+public class HomeController {
+    @GetMapping("/")
     public String home() {
         Gson gson = new Gson();
-        HomeObj homeObj = new HomeObj();
+        Home homeObj = new Home();
         homeObj.setId(1);
         homeObj.setTest("test");
         return gson.toJson(homeObj);

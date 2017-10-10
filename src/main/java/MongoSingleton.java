@@ -28,7 +28,7 @@ public class MongoSingleton {
 
     public void setMongoDatabase(String selectDatabase) {
         if (mongoClient != null) {
-            mongoClient.getDatabase(selectDatabase);
+            mongoDatabase = mongoClient.getDatabase(selectDatabase);
         }
     }
 
