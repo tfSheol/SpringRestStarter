@@ -2,7 +2,7 @@ package entity;
 
 /**
  * @author sheol on 9/26/17 at 4:47 PM
- * @project JavaGroupManager
+ * @project SpringRestStarter
  */
 public class Account {
     private String username;

@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import entity.Account;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
+import tool.MyBson;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +21,9 @@ public class AccountController {
     public AccountController() {
         /* simulate accounts */
         accounts.add(new Account("test", "test", "test@test.fr"));
+
+        // TODO: 10/11/17 delete this
+        new MyBson();
     }
 
     private String getResponse(String msg) {
