@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="MyConfiguration" removed="false">
           <file>file://$MODULE_DIR$/src/main/java/MyConfiguration.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/configuration/WebConfig.java</file>
         </fileset>
       </configuration>
     </facet>
